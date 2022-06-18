@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>876</width>
-    <height>797</height>
+    <width>889</width>
+    <height>815</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,15 +17,15 @@
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
+      <x>10</x>
+      <y>20</y>
       <width>866</width>
       <height>751</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="6" column="6">
-      <widget class="QPushButton" name="pushButton_79">
+      <widget class="QPushButton" name="tile55">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -41,7 +41,7 @@
       </widget>
      </item>
      <item row="0" column="3">
-      <widget class="QPushButton" name="pushButton_40">
+      <widget class="QPushButton" name="tile02">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -57,7 +57,7 @@
       </widget>
      </item>
      <item row="10" column="1">
-      <widget class="QPushButton" name="pushButton_28">
+      <widget class="QPushButton" name="tile91">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -73,7 +73,7 @@
       </widget>
      </item>
      <item row="8" column="1">
-      <widget class="QPushButton" name="pushButton_26">
+      <widget class="QPushButton" name="tile71">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -89,7 +89,7 @@
       </widget>
      </item>
      <item row="3" column="3">
-      <widget class="QPushButton" name="pushButton_41">
+      <widget class="QPushButton" name="tile22">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -105,7 +105,7 @@
       </widget>
      </item>
      <item row="10" column="3">
-      <widget class="QPushButton" name="pushButton_48">
+      <widget class="QPushButton" name="tile92">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -121,7 +121,7 @@
       </widget>
      </item>
      <item row="0" column="4">
-      <widget class="QPushButton" name="pushButton_50">
+      <widget class="QPushButton" name="tile03">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -137,7 +137,7 @@
       </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QPushButton" name="pushButton_22">
+      <widget class="QPushButton" name="tile31">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -153,7 +153,7 @@
       </widget>
      </item>
      <item row="7" column="9">
-      <widget class="QPushButton" name="pushButton_59">
+      <widget class="QPushButton" name="tile68">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -169,7 +169,7 @@
       </widget>
      </item>
      <item row="5" column="7">
-      <widget class="QPushButton" name="pushButton_87">
+      <widget class="QPushButton" name="tile46">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -185,7 +185,7 @@
       </widget>
      </item>
      <item row="4" column="0">
-      <widget class="QPushButton" name="pushButton_32">
+      <widget class="QPushButton" name="tile30">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -201,7 +201,7 @@
       </widget>
      </item>
      <item row="7" column="8">
-      <widget class="QPushButton" name="pushButton_58">
+      <widget class="QPushButton" name="tile67">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -217,7 +217,7 @@
       </widget>
      </item>
      <item row="10" column="0">
-      <widget class="QPushButton" name="pushButton_38">
+      <widget class="QPushButton" name="tile90">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -233,7 +233,7 @@
       </widget>
      </item>
      <item row="6" column="1">
-      <widget class="QPushButton" name="pushButton_24">
+      <widget class="QPushButton" name="tile51">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -249,7 +249,7 @@
       </widget>
      </item>
      <item row="9" column="5">
-      <widget class="QPushButton" name="pushButton_66">
+      <widget class="QPushButton" name="tile84">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -265,7 +265,7 @@
       </widget>
      </item>
      <item row="7" column="6">
-      <widget class="QPushButton" name="pushButton_55">
+      <widget class="QPushButton" name="tile65">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -281,7 +281,7 @@
       </widget>
      </item>
      <item row="4" column="3">
-      <widget class="QPushButton" name="pushButton_42">
+      <widget class="QPushButton" name="tile32">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -297,7 +297,7 @@
       </widget>
      </item>
      <item row="7" column="10">
-      <widget class="QPushButton" name="pushButton_60">
+      <widget class="QPushButton" name="tile69">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -313,7 +313,7 @@
       </widget>
      </item>
      <item row="3" column="5">
-      <widget class="QPushButton" name="pushButton_71">
+      <widget class="QPushButton" name="tile24">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -329,7 +329,7 @@
       </widget>
      </item>
      <item row="5" column="0">
-      <widget class="QPushButton" name="pushButton_33">
+      <widget class="QPushButton" name="tile40">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -345,7 +345,7 @@
       </widget>
      </item>
      <item row="10" column="4">
-      <widget class="QPushButton" name="pushButton_64">
+      <widget class="QPushButton" name="tile93">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -361,7 +361,7 @@
       </widget>
      </item>
      <item row="6" column="7">
-      <widget class="QPushButton" name="pushButton_86">
+      <widget class="QPushButton" name="tile56">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -377,7 +377,7 @@
       </widget>
      </item>
      <item row="4" column="6">
-      <widget class="QPushButton" name="pushButton_77">
+      <widget class="QPushButton" name="tile35">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -393,7 +393,7 @@
       </widget>
      </item>
      <item row="6" column="4">
-      <widget class="QPushButton" name="pushButton_54">
+      <widget class="QPushButton" name="tile53">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -409,7 +409,7 @@
       </widget>
      </item>
      <item row="10" column="7">
-      <widget class="QPushButton" name="pushButton_83">
+      <widget class="QPushButton" name="tile96">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -425,7 +425,7 @@
       </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QPushButton" name="pushButton_23">
+      <widget class="QPushButton" name="tile41">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -441,7 +441,7 @@
       </widget>
      </item>
      <item row="4" column="7">
-      <widget class="QPushButton" name="pushButton_88">
+      <widget class="QPushButton" name="tile36">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -457,7 +457,7 @@
       </widget>
      </item>
      <item row="8" column="5">
-      <widget class="QPushButton" name="pushButton_67">
+      <widget class="QPushButton" name="tile74">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -473,7 +473,7 @@
       </widget>
      </item>
      <item row="8" column="6">
-      <widget class="QPushButton" name="pushButton_80">
+      <widget class="QPushButton" name="tile75">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -489,7 +489,7 @@
       </widget>
      </item>
      <item row="10" column="6">
-      <widget class="QPushButton" name="pushButton_82">
+      <widget class="QPushButton" name="tile95">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -505,7 +505,7 @@
       </widget>
      </item>
      <item row="0" column="0">
-      <widget class="QPushButton" name="pushButton_30">
+      <widget class="QPushButton" name="tile00">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -527,7 +527,7 @@
       </widget>
      </item>
      <item row="8" column="7">
-      <widget class="QPushButton" name="pushButton_85">
+      <widget class="QPushButton" name="tile76">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -543,7 +543,7 @@
       </widget>
      </item>
      <item row="3" column="0">
-      <widget class="QPushButton" name="pushButton_31">
+      <widget class="QPushButton" name="tile20">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -559,7 +559,7 @@
       </widget>
      </item>
      <item row="8" column="4">
-      <widget class="QPushButton" name="pushButton_62">
+      <widget class="QPushButton" name="tile73">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -575,7 +575,7 @@
       </widget>
      </item>
      <item row="6" column="5">
-      <widget class="QPushButton" name="pushButton_68">
+      <widget class="QPushButton" name="tile54">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -591,7 +591,7 @@
       </widget>
      </item>
      <item row="4" column="5">
-      <widget class="QPushButton" name="pushButton_70">
+      <widget class="QPushButton" name="tile34">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -607,7 +607,7 @@
       </widget>
      </item>
      <item row="2" column="0">
-      <widget class="QPushButton" name="pushButton_29">
+      <widget class="QPushButton" name="tile10">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -623,7 +623,7 @@
       </widget>
      </item>
      <item row="10" column="5">
-      <widget class="QPushButton" name="pushButton_65">
+      <widget class="QPushButton" name="tile94">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -639,7 +639,7 @@
       </widget>
      </item>
      <item row="7" column="5">
-      <widget class="QPushButton" name="pushButton_56">
+      <widget class="QPushButton" name="tile64">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -655,7 +655,7 @@
       </widget>
      </item>
      <item row="9" column="0">
-      <widget class="QPushButton" name="pushButton_37">
+      <widget class="QPushButton" name="tile80">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -671,7 +671,7 @@
       </widget>
      </item>
      <item row="4" column="4">
-      <widget class="QPushButton" name="pushButton_52">
+      <widget class="QPushButton" name="tile33">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -687,7 +687,7 @@
       </widget>
      </item>
      <item row="5" column="5">
-      <widget class="QPushButton" name="pushButton_69">
+      <widget class="QPushButton" name="tile44">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -703,7 +703,7 @@
       </widget>
      </item>
      <item row="0" column="6">
-      <widget class="QPushButton" name="pushButton_74">
+      <widget class="QPushButton" name="tile05">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -719,7 +719,7 @@
       </widget>
      </item>
      <item row="9" column="3">
-      <widget class="QPushButton" name="pushButton_47">
+      <widget class="QPushButton" name="tile82">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -735,7 +735,7 @@
       </widget>
      </item>
      <item row="7" column="0">
-      <widget class="QPushButton" name="pushButton_35">
+      <widget class="QPushButton" name="tile60">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -751,7 +751,7 @@
       </widget>
      </item>
      <item row="9" column="1">
-      <widget class="QPushButton" name="pushButton_27">
+      <widget class="QPushButton" name="tile81">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -767,7 +767,7 @@
       </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QPushButton" name="pushButton_21">
+      <widget class="QPushButton" name="tile21">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -783,7 +783,7 @@
       </widget>
      </item>
      <item row="0" column="7">
-      <widget class="QPushButton" name="pushButton_91">
+      <widget class="QPushButton" name="tile06">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -799,7 +799,7 @@
       </widget>
      </item>
      <item row="7" column="4">
-      <widget class="QPushButton" name="pushButton_61">
+      <widget class="QPushButton" name="tile63">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -815,7 +815,7 @@
       </widget>
      </item>
      <item row="0" column="5">
-      <widget class="QPushButton" name="pushButton_73">
+      <widget class="QPushButton" name="tile04">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -831,7 +831,7 @@
       </widget>
      </item>
      <item row="2" column="6">
-      <widget class="QPushButton" name="pushButton_75">
+      <widget class="QPushButton" name="tile15">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -847,7 +847,7 @@
       </widget>
      </item>
      <item row="2" column="7">
-      <widget class="QPushButton" name="pushButton_90">
+      <widget class="QPushButton" name="tile16">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -863,7 +863,7 @@
       </widget>
      </item>
      <item row="7" column="1">
-      <widget class="QPushButton" name="pushButton_25">
+      <widget class="QPushButton" name="tile61">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -879,7 +879,7 @@
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QPushButton" name="pushButton_20">
+      <widget class="QPushButton" name="tile01">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -895,7 +895,7 @@
       </widget>
      </item>
      <item row="9" column="4">
-      <widget class="QPushButton" name="pushButton_63">
+      <widget class="QPushButton" name="tile83">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -911,7 +911,7 @@
       </widget>
      </item>
      <item row="7" column="7">
-      <widget class="QPushButton" name="pushButton_57">
+      <widget class="QPushButton" name="tile66">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -927,7 +927,7 @@
       </widget>
      </item>
      <item row="2" column="4">
-      <widget class="QPushButton" name="pushButton_49">
+      <widget class="QPushButton" name="tile13">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -943,7 +943,7 @@
       </widget>
      </item>
      <item row="2" column="3">
-      <widget class="QPushButton" name="pushButton_39">
+      <widget class="QPushButton" name="tile12">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -959,7 +959,7 @@
       </widget>
      </item>
      <item row="5" column="4">
-      <widget class="QPushButton" name="pushButton_53">
+      <widget class="QPushButton" name="tile43">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -975,7 +975,7 @@
       </widget>
      </item>
      <item row="3" column="6">
-      <widget class="QPushButton" name="pushButton_76">
+      <widget class="QPushButton" name="tile25">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -991,7 +991,7 @@
       </widget>
      </item>
      <item row="9" column="7">
-      <widget class="QPushButton" name="pushButton_84">
+      <widget class="QPushButton" name="tile86">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1007,7 +1007,7 @@
       </widget>
      </item>
      <item row="5" column="3">
-      <widget class="QPushButton" name="pushButton_43">
+      <widget class="QPushButton" name="tile42">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1023,7 +1023,7 @@
       </widget>
      </item>
      <item row="3" column="4">
-      <widget class="QPushButton" name="pushButton_51">
+      <widget class="QPushButton" name="tile23">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1039,7 +1039,7 @@
       </widget>
      </item>
      <item row="3" column="7">
-      <widget class="QPushButton" name="pushButton_89">
+      <widget class="QPushButton" name="tile26">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1055,7 +1055,7 @@
       </widget>
      </item>
      <item row="9" column="6">
-      <widget class="QPushButton" name="pushButton_81">
+      <widget class="QPushButton" name="tile85">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1071,7 +1071,7 @@
       </widget>
      </item>
      <item row="8" column="3">
-      <widget class="QPushButton" name="pushButton_46">
+      <widget class="QPushButton" name="tile72">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1087,7 +1087,7 @@
       </widget>
      </item>
      <item row="6" column="3">
-      <widget class="QPushButton" name="pushButton_44">
+      <widget class="QPushButton" name="tile52">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1103,7 +1103,7 @@
       </widget>
      </item>
      <item row="7" column="3">
-      <widget class="QPushButton" name="pushButton_45">
+      <widget class="QPushButton" name="tile62">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1119,7 +1119,7 @@
       </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QPushButton" name="pushButton_18">
+      <widget class="QPushButton" name="tile11">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1135,7 +1135,7 @@
       </widget>
      </item>
      <item row="8" column="0">
-      <widget class="QPushButton" name="pushButton_36">
+      <widget class="QPushButton" name="tile70">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1151,7 +1151,7 @@
       </widget>
      </item>
      <item row="6" column="0">
-      <widget class="QPushButton" name="pushButton_34">
+      <widget class="QPushButton" name="tile50">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1167,7 +1167,7 @@
       </widget>
      </item>
      <item row="2" column="5">
-      <widget class="QPushButton" name="pushButton_72">
+      <widget class="QPushButton" name="tile14">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1183,7 +1183,7 @@
       </widget>
      </item>
      <item row="5" column="6">
-      <widget class="QPushButton" name="pushButton_78">
+      <widget class="QPushButton" name="tile45">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1199,7 +1199,7 @@
       </widget>
      </item>
      <item row="0" column="8">
-      <widget class="QPushButton" name="pushButton_92">
+      <widget class="QPushButton" name="tile07">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1215,7 +1215,7 @@
       </widget>
      </item>
      <item row="2" column="8">
-      <widget class="QPushButton" name="pushButton_93">
+      <widget class="QPushButton" name="tile17">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1231,7 +1231,7 @@
       </widget>
      </item>
      <item row="3" column="8">
-      <widget class="QPushButton" name="pushButton_94">
+      <widget class="QPushButton" name="tile27">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1247,7 +1247,7 @@
       </widget>
      </item>
      <item row="4" column="8">
-      <widget class="QPushButton" name="pushButton_95">
+      <widget class="QPushButton" name="tile37">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1263,7 +1263,7 @@
       </widget>
      </item>
      <item row="5" column="8">
-      <widget class="QPushButton" name="pushButton_96">
+      <widget class="QPushButton" name="tile47">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1279,7 +1279,7 @@
       </widget>
      </item>
      <item row="6" column="8">
-      <widget class="QPushButton" name="pushButton_97">
+      <widget class="QPushButton" name="tile57">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1295,7 +1295,7 @@
       </widget>
      </item>
      <item row="8" column="8">
-      <widget class="QPushButton" name="pushButton_98">
+      <widget class="QPushButton" name="tile77">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1311,7 +1311,7 @@
       </widget>
      </item>
      <item row="9" column="8">
-      <widget class="QPushButton" name="pushButton_99">
+      <widget class="QPushButton" name="tile87">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1327,7 +1327,7 @@
       </widget>
      </item>
      <item row="10" column="8">
-      <widget class="QPushButton" name="pushButton_100">
+      <widget class="QPushButton" name="tile97">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1343,7 +1343,7 @@
       </widget>
      </item>
      <item row="10" column="9">
-      <widget class="QPushButton" name="pushButton_101">
+      <widget class="QPushButton" name="tile98">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1359,7 +1359,7 @@
       </widget>
      </item>
      <item row="10" column="10">
-      <widget class="QPushButton" name="pushButton_102">
+      <widget class="QPushButton" name="tile99">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1375,7 +1375,7 @@
       </widget>
      </item>
      <item row="9" column="10">
-      <widget class="QPushButton" name="pushButton_103">
+      <widget class="QPushButton" name="tile89">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1391,7 +1391,7 @@
       </widget>
      </item>
      <item row="8" column="10">
-      <widget class="QPushButton" name="pushButton_104">
+      <widget class="QPushButton" name="tile79">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1407,7 +1407,7 @@
       </widget>
      </item>
      <item row="9" column="9">
-      <widget class="QPushButton" name="pushButton_105">
+      <widget class="QPushButton" name="tile88">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1423,7 +1423,7 @@
       </widget>
      </item>
      <item row="8" column="9">
-      <widget class="QPushButton" name="pushButton_106">
+      <widget class="QPushButton" name="tile78">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1439,7 +1439,7 @@
       </widget>
      </item>
      <item row="6" column="9">
-      <widget class="QPushButton" name="pushButton_107">
+      <widget class="QPushButton" name="tile58">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1455,7 +1455,7 @@
       </widget>
      </item>
      <item row="6" column="10">
-      <widget class="QPushButton" name="pushButton_108">
+      <widget class="QPushButton" name="tile59">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1471,7 +1471,7 @@
       </widget>
      </item>
      <item row="5" column="9">
-      <widget class="QPushButton" name="pushButton_109">
+      <widget class="QPushButton" name="tile48">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1487,7 +1487,7 @@
       </widget>
      </item>
      <item row="5" column="10">
-      <widget class="QPushButton" name="pushButton_110">
+      <widget class="QPushButton" name="tile49">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1503,7 +1503,7 @@
       </widget>
      </item>
      <item row="4" column="9">
-      <widget class="QPushButton" name="pushButton_111">
+      <widget class="QPushButton" name="tile38">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1519,7 +1519,7 @@
       </widget>
      </item>
      <item row="4" column="10">
-      <widget class="QPushButton" name="pushButton_112">
+      <widget class="QPushButton" name="tile39">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1535,7 +1535,7 @@
       </widget>
      </item>
      <item row="3" column="9">
-      <widget class="QPushButton" name="pushButton_113">
+      <widget class="QPushButton" name="tile28">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1551,7 +1551,7 @@
       </widget>
      </item>
      <item row="3" column="10">
-      <widget class="QPushButton" name="pushButton_114">
+      <widget class="QPushButton" name="tile29">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1567,7 +1567,7 @@
       </widget>
      </item>
      <item row="2" column="10">
-      <widget class="QPushButton" name="pushButton_115">
+      <widget class="QPushButton" name="tile19">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1583,7 +1583,7 @@
       </widget>
      </item>
      <item row="2" column="9">
-      <widget class="QPushButton" name="pushButton_116">
+      <widget class="QPushButton" name="tile18">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1599,7 +1599,7 @@
       </widget>
      </item>
      <item row="0" column="9">
-      <widget class="QPushButton" name="pushButton_117">
+      <widget class="QPushButton" name="tile08">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1615,7 +1615,7 @@
       </widget>
      </item>
      <item row="0" column="10">
-      <widget class="QPushButton" name="pushButton_118">
+      <widget class="QPushButton" name="tile09">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -1638,7 +1638,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>876</width>
+     <width>889</width>
      <height>21</height>
     </rect>
    </property>
