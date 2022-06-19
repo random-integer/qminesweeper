@@ -22,9 +22,12 @@ private:
     Ui::MainWindow *ui;
     void lose();
     void win();
+    int getCount(int row, int col);
     Tile *tiles[10][10];
 private slots:
     void dig(int row, int col);
     void reveal(int row, int col);  // called when a neighboring tile of count 0 is dug()
+    void mark(int row, int col);
+    void fastDig(int row, int col);  // called when a tile is middle clicked
 };
 #endif // MAINWINDOW_H

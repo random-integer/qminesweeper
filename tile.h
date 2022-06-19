@@ -16,9 +16,10 @@ public:
 
 signals:
     void rightClicked();
+    void middleClicked();
 
-// private slots:
-    // void mousePressEvent(QMouseEvent *e);
+private slots:
+    void mousePressEvent(QMouseEvent *e);
 
 };
 

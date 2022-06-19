@@ -9,14 +9,16 @@ Tile::Tile(QWidget *parent)
     return;
 }
 
-/*
 void Tile::mousePressEvent(QMouseEvent *e) {
     if (e->button() == Qt::RightButton) {
         emit rightClicked();
+    } else if (e->button() == Qt::LeftButton) {
+        emit clicked();
+    } else {
+        emit middleClicked();
     }
     return;
 }
-*/
 
 /*
 void Tile::dig() {
