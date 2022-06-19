@@ -26,6 +26,7 @@ void Tile::mousePressEvent(QMouseEvent *e) {
     return;
 }
 
+/*
 void Tile::dig() {
     this->setText("dug");
     switch (marked) {
@@ -53,3 +54,4 @@ void Tile::mark() {
 void Tile::secondaryDig() {
     return;
 }
+*/

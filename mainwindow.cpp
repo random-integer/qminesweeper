@@ -1,14 +1,12 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "tile.h"
-#include <QTextStream>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    QTextStream out(stdout);
     Tile *tiles[10][10];
     // tiles[row][column]
     /*  // doesn't seem to work quite reliably
