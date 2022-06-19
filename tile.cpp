@@ -1,7 +1,8 @@
 #include "tile.h"
+#include <QPushButton>
 
 Tile::Tile(QWidget *parent)
-    : QWidget{parent}
+    : QPushButton{parent}
 {
 
 }

@@ -2,8 +2,9 @@
 #define TILE_H
 
 #include <QWidget>
+#include <QPushButton>
 
-class Tile : public QWidget
+class Tile : public QPushButton
 {
     Q_OBJECT
 public:
