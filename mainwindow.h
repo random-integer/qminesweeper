@@ -17,5 +17,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    void endGameLose();
+    void endGameWin();
 };
 #endif // MAINWINDOW_H
