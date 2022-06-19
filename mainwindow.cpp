@@ -13,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent)
         for (int j = 0; j < 10; j++) {
             tiles[i][j] = dynamic_cast<Tile*>(ui->gridLayout->itemAtPosition(i, j)->widget());
             // tiles[i][j] = tileij
+            connect(tiles[i][j], SIGNAL (clicked()), tiles[i][j], SLOT (dig()));
+            connect(tiles[i][j], SIGNAL (rightClicked()), tiles[i][j], SLOT (mark()));
         }
     }
 }

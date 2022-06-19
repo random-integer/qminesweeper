@@ -3,16 +3,34 @@
 
 Tile::Tile(QWidget *parent)
     : QPushButton{parent}
-    , isMine(false)
+    , mine(false)
+    , marked(0)
 {
 
 }
 
-bool Tile::getIsMine() {
-    return this->isMine;
+bool Tile::getmine() {
+    return this->mine;
 }
 
-void Tile::setIsMine(bool x = true) {
-    this->isMine = x;
+void Tile::setmine(bool x = true) {
+    this->mine = x;
+    return;
+}
+
+void Tile::mousePressEvent(QMouseEvent *e) {
+    if (e->button()==Qt::RightButton) {
+        emit rightClicked();
+    }
+    return;
+}
+
+void Tile::dig() {
+
+}
+
+void Tile::mark() {
+    this->marked += 1;
+    this->marked %= 3;
     return;
 }
