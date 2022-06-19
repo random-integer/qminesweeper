@@ -5,17 +5,7 @@
 Tile::Tile(QWidget *parent)
     : QPushButton{parent}
     , mine(false)
-    , marked(0)
-{
-    return;
-}
-
-bool Tile::getmine() {
-    return this->mine;
-}
-
-void Tile::setmine(bool x = true) {
-    this->mine = x;
+    , marked(0) {
     return;
 }
 

@@ -2,12 +2,12 @@
 #include "ui_mainwindow.h"
 #include "tile.h"
 
+#define MINECOUNT 15
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-{
+    , ui(new Ui::MainWindow) {
     ui->setupUi(this);
-    Tile *tiles[10][10];
     // tiles[row][column]
     /*  // doesn't seem to work quite reliably
     for (int i = 0; i < 10; i++) {
@@ -122,16 +122,52 @@ MainWindow::MainWindow(QWidget *parent)
     }
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
-            // connect(tiles[i][j], &QPushButton::clicked, tiles[i][j], &Tile::dig);
-            // connect(tiles[i][j], SIGNAL (rightClicked()), tiles[i][j], SLOT (mark()));
             // tiles[i][j]->setText(QString("%1").arg(10 * i + j));
-
+            connect(tiles[i][j], &QPushButton::clicked, this, [=]() { this->dig(i, j); });
+            connect(tiles[i][j], &Tile::rightClicked, this, [=]() { this->reveal(i, j); });
+            tiles[i][j]->setPos(i, j);
         }
     }
 }
 
-MainWindow::~MainWindow()
-{
+MainWindow::~MainWindow() {
     delete ui;
 }
 
+void MainWindow::dig(int row, int col) {
+    switch (tiles[row][col]->marked) {
+    case 0:
+        if (tiles[row][col]->mine) {
+            emit explode();
+        } else {
+            tiles[row][col]->setEnabled(false);
+            int count = 0;
+            if (row == 0 && col == 0) {
+                count = tiles[0][1]->mine + tiles[1][1]->mine + tiles[1][0]->mine;
+            } else if (row == 0 && col == 9) {
+                count = tiles[0][8]->mine + tiles[1][8]->mine + tiles[1][9]->mine;
+            } else if (row == 9 && col == 0) {
+                count = tiles[8][0]->mine + tiles[8][1]->mine + tiles[9][1]->mine;
+            } else if (row == 9 && col == 9) {
+                count = tiles[9][8]->mine + tiles[8][8]->mine + tiles[8][9]->mine;
+            } else if (row == 0) {
+                count = tiles[0][col-1]->mine + tiles[1][col-1]->mine + tiles[1][col]->mine + tiles[1][col+1]->mine + tiles[0][col+1]->mine;
+            } else if (row == 9) {
+                count = tiles[9][col-1]->mine + tiles[8][col-1]->mine + tiles[8][col]->mine + tiles[8][col+1]->mine + tiles[9][col+1]->mine;
+            } else if (col == 0) {
+                count = tiles[row-1][0]->mine + tiles[row-1][1]->mine + tiles[row][1]->mine + tiles[row+1][1]->mine + tiles[row+1][0]->mine;
+            } else if (col == 9) {
+                count = tiles[row-1][9]->mine + tiles[row-1][8]->mine + tiles[row][8]->mine + tiles[row+1][8]->mine + tiles[row+1][9]->mine;
+            } else {
+                count = tiles[row][col+1]->mine + tiles[row-1][col+1]->mine + tiles[row-1][col]->mine + tiles[row-1][col-1]->mine
+                        + tiles[row][col-1]->mine + tiles[row+1][col-1]->mine + tiles[row+1][col]->mine + tiles[row+1][col+1]->mine;
+            }
+            tiles[row][col]->setText(QString("%1").arg(count));
+        }
+
+    }
+}
+
+void MainWindow::reveal(int row, int col) {
+
+}
