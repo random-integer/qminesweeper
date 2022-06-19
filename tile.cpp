@@ -9,12 +9,14 @@ Tile::Tile(QWidget *parent)
     return;
 }
 
+/*
 void Tile::mousePressEvent(QMouseEvent *e) {
     if (e->button() == Qt::RightButton) {
         emit rightClicked();
     }
     return;
 }
+*/
 
 /*
 void Tile::dig() {

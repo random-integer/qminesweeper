@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "tile.h"
+#include <QTextStream>
 
 #define MINECOUNT 15
 
@@ -123,9 +124,10 @@ MainWindow::MainWindow(QWidget *parent)
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
             // tiles[i][j]->setText(QString("%1").arg(10 * i + j));
-            connect(tiles[i][j], &QPushButton::clicked, this, [=]() { this->dig(i, j); });
-            connect(tiles[i][j], &Tile::rightClicked, this, [=]() { this->reveal(i, j); });
-            tiles[i][j]->setPos(i, j);
+            connect(tiles[i][j], &Tile::clicked, this, [=]() { this->dig(i, j); });
+            // connect(tiles[i][j], &Tile::rightClicked, this, [=]() { this->reveal(i, j); });
+            tiles[i][j]->row = i;
+            tiles[i][j]->col = j;
         }
     }
 }
@@ -135,6 +137,7 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::dig(int row, int col) {
+    tiles[row][col]->setText("uwu");
     switch (tiles[row][col]->marked) {
     case 0:
         if (tiles[row][col]->mine) {
@@ -164,10 +167,13 @@ void MainWindow::dig(int row, int col) {
             }
             tiles[row][col]->setText(QString("%1").arg(count));
         }
-
+        break;
+    case 1:
+    case 2:
+        return;
     }
 }
 
 void MainWindow::reveal(int row, int col) {
-
+    return;
 }

@@ -10,7 +10,6 @@ class Tile : public QPushButton {
 public:
     explicit Tile(QWidget *parent = nullptr);
     bool mine;
-    void setPos(int row, int col);
     int marked;  // 0: not marked, 1: flagged, 2: question marked
     int row;
     int col;
@@ -18,8 +17,8 @@ public:
 signals:
     void rightClicked();
 
-private slots:
-    void mousePressEvent(QMouseEvent *e);
+// private slots:
+    // void mousePressEvent(QMouseEvent *e);
 
 };
 
