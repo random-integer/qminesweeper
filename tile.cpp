@@ -1,13 +1,13 @@
 #include "tile.h"
 #include <QPushButton>
-#include <iostream>
+#include <QTextStream>
 
 Tile::Tile(QWidget *parent)
     : QPushButton{parent}
     , mine(false)
     , marked(0)
 {
-
+    return;
 }
 
 bool Tile::getmine() {
@@ -27,20 +27,19 @@ void Tile::mousePressEvent(QMouseEvent *e) {
 }
 
 void Tile::dig() {
+    this->setText("dug");
     switch (marked) {
-    case 0:
+    case 0: // not marked
         if (mine) {
             emit explode();
         } else {
             // TODO: make button disappear
         }
         break;
-    case 1:
-    case 2:
+    case 1: // flagged
+    case 2: // question marked
         return;
         break;
-    default:
-        std::cout << "wtf";
     }
 
 }
@@ -48,5 +47,9 @@ void Tile::dig() {
 void Tile::mark() {
     this->marked += 1;
     this->marked %= 3;
+    return;
+}
+
+void Tile::secondaryDig() {
     return;
 }
