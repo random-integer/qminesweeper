@@ -11,7 +11,8 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
     ui(new Ui::MainWindow),
     markedMineCount(0),
-    markedSafeTileCount(0) {
+    markedSafeTileCount(0),
+    dugCount(0) {
     ui->setupUi(this);
     // tiles[row][column]
     /*  // doesn't seem to work quite reliably
@@ -23,7 +24,7 @@ MainWindow::MainWindow(QWidget *parent)
     }
     */
 
-    if (true) {
+    if (true) {    // so far, this seems to be the most robust way I've found
         tiles[0][0] = ui->tile00;
         tiles[0][1] = ui->tile01;
         tiles[0][2] = ui->tile02;
@@ -153,10 +154,10 @@ MainWindow::~MainWindow() {
 void MainWindow::dig(int row, int col) {
     if (tiles[row][col]->marked == 0) {
         if (tiles[row][col]->mine) {
-            emit explode();
             lose();
         } else {
             tiles[row][col]->setEnabled(false);
+            dugCount++;
             int count = getCount(row, col);
             if (count == 0) {
                 reveal(row, col+1);
@@ -176,9 +177,11 @@ void MainWindow::dig(int row, int col) {
 
 
 void MainWindow::reveal(int row, int col) {
+    // | out     of          range                |    marked                    |   is mine              |       ! is dug               |
     if (row < 0 || row > 9 || col < 0 || col > 9 || tiles[row][col]->marked > 0 || tiles[row][col]->mine || !tiles[row][col]->isEnabled()) {
         return;
     } else if (getCount(row, col) == 0) {
+        dugCount++;
         tiles[row][col]->setEnabled(false);
         reveal(row, col+1);
         reveal(row-1, col+1);
@@ -189,6 +192,7 @@ void MainWindow::reveal(int row, int col) {
         reveal(row+1, col);
         reveal(row+1, col+1);
     } else {
+        dugCount++;
         tiles[row][col]->setEnabled(false);
         tiles[row][col]->setText(QString("%1").arg(getCount(row, col)));
     }
@@ -199,10 +203,14 @@ void MainWindow::mark(int row, int col) {
     case 0:
         tiles[row][col]->marked = 1;
         tiles[row][col]->setText("⚑");
+        markedMineCount += tiles[row][col]->mine;
+        markedSafeTileCount += !tiles[row][col]->mine;
         break;
     case 1:
         tiles[row][col]->marked = 2;
         tiles[row][col]->setText("?");
+        markedMineCount -= tiles[row][col]->mine;
+        markedSafeTileCount -= !tiles[row][col]->mine;
         break;
     case 2:
         tiles[row][col]->marked = 0;
@@ -238,5 +246,6 @@ int MainWindow::getCount(int row, int col) {
 }
 
 void MainWindow::lose() {
+    emit explode();
     return;
 }

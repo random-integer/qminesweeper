@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>888</width>
-    <height>826</height>
+    <width>886</width>
+    <height>928</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,17 +20,23 @@
       <x>10</x>
       <y>20</y>
       <width>866</width>
-      <height>751</height>
+      <height>856</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
      <item row="6" column="6">
       <widget class="Tile" name="tile55">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -43,10 +49,16 @@
      <item row="0" column="3">
       <widget class="Tile" name="tile02">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -59,10 +71,16 @@
      <item row="10" column="1">
       <widget class="Tile" name="tile91">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -75,10 +93,16 @@
      <item row="8" column="1">
       <widget class="Tile" name="tile71">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -91,10 +115,16 @@
      <item row="3" column="3">
       <widget class="Tile" name="tile22">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -107,10 +137,16 @@
      <item row="10" column="3">
       <widget class="Tile" name="tile92">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -123,10 +159,16 @@
      <item row="0" column="4">
       <widget class="Tile" name="tile03">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -139,10 +181,16 @@
      <item row="4" column="1">
       <widget class="Tile" name="tile31">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -155,10 +203,16 @@
      <item row="7" column="9">
       <widget class="Tile" name="tile68">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -171,10 +225,16 @@
      <item row="5" column="7">
       <widget class="Tile" name="tile46">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -187,10 +247,16 @@
      <item row="4" column="0">
       <widget class="Tile" name="tile30">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -203,10 +269,16 @@
      <item row="7" column="8">
       <widget class="Tile" name="tile67">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -219,10 +291,16 @@
      <item row="10" column="0">
       <widget class="Tile" name="tile90">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -235,10 +313,16 @@
      <item row="6" column="1">
       <widget class="Tile" name="tile51">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -251,10 +335,16 @@
      <item row="9" column="5">
       <widget class="Tile" name="tile84">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -267,10 +357,16 @@
      <item row="7" column="6">
       <widget class="Tile" name="tile65">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -283,10 +379,16 @@
      <item row="4" column="3">
       <widget class="Tile" name="tile32">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -299,10 +401,16 @@
      <item row="7" column="10">
       <widget class="Tile" name="tile69">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -315,10 +423,16 @@
      <item row="3" column="5">
       <widget class="Tile" name="tile24">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -331,10 +445,16 @@
      <item row="5" column="0">
       <widget class="Tile" name="tile40">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -347,10 +467,16 @@
      <item row="10" column="4">
       <widget class="Tile" name="tile93">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -363,10 +489,16 @@
      <item row="6" column="7">
       <widget class="Tile" name="tile56">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -379,10 +511,16 @@
      <item row="4" column="6">
       <widget class="Tile" name="tile35">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -395,10 +533,16 @@
      <item row="6" column="4">
       <widget class="Tile" name="tile53">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -411,10 +555,16 @@
      <item row="10" column="7">
       <widget class="Tile" name="tile96">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -427,10 +577,16 @@
      <item row="5" column="1">
       <widget class="Tile" name="tile41">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -443,10 +599,16 @@
      <item row="4" column="7">
       <widget class="Tile" name="tile36">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -459,10 +621,16 @@
      <item row="8" column="5">
       <widget class="Tile" name="tile74">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -475,10 +643,16 @@
      <item row="8" column="6">
       <widget class="Tile" name="tile75">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -491,10 +665,16 @@
      <item row="10" column="6">
       <widget class="Tile" name="tile95">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -507,10 +687,16 @@
      <item row="0" column="0">
       <widget class="Tile" name="tile00">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="maximumSize">
         <size>
@@ -529,10 +715,16 @@
      <item row="8" column="7">
       <widget class="Tile" name="tile76">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -545,10 +737,16 @@
      <item row="3" column="0">
       <widget class="Tile" name="tile20">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -561,10 +759,16 @@
      <item row="8" column="4">
       <widget class="Tile" name="tile73">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -577,10 +781,16 @@
      <item row="6" column="5">
       <widget class="Tile" name="tile54">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -593,10 +803,16 @@
      <item row="4" column="5">
       <widget class="Tile" name="tile34">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -609,10 +825,16 @@
      <item row="2" column="0">
       <widget class="Tile" name="tile10">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -625,10 +847,16 @@
      <item row="10" column="5">
       <widget class="Tile" name="tile94">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -641,10 +869,16 @@
      <item row="7" column="5">
       <widget class="Tile" name="tile64">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -657,10 +891,16 @@
      <item row="9" column="0">
       <widget class="Tile" name="tile80">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -673,10 +913,16 @@
      <item row="4" column="4">
       <widget class="Tile" name="tile33">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -689,10 +935,16 @@
      <item row="5" column="5">
       <widget class="Tile" name="tile44">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -705,10 +957,16 @@
      <item row="0" column="6">
       <widget class="Tile" name="tile05">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -721,10 +979,16 @@
      <item row="9" column="3">
       <widget class="Tile" name="tile82">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -737,10 +1001,16 @@
      <item row="7" column="0">
       <widget class="Tile" name="tile60">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -753,10 +1023,16 @@
      <item row="9" column="1">
       <widget class="Tile" name="tile81">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -769,10 +1045,16 @@
      <item row="3" column="1">
       <widget class="Tile" name="tile21">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -785,10 +1067,16 @@
      <item row="0" column="7">
       <widget class="Tile" name="tile06">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -801,10 +1089,16 @@
      <item row="7" column="4">
       <widget class="Tile" name="tile63">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -817,10 +1111,16 @@
      <item row="0" column="5">
       <widget class="Tile" name="tile04">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -833,10 +1133,16 @@
      <item row="2" column="6">
       <widget class="Tile" name="tile15">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -849,10 +1155,16 @@
      <item row="2" column="7">
       <widget class="Tile" name="tile16">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -865,10 +1177,16 @@
      <item row="7" column="1">
       <widget class="Tile" name="tile61">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -881,10 +1199,16 @@
      <item row="0" column="1">
       <widget class="Tile" name="tile01">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -897,10 +1221,16 @@
      <item row="9" column="4">
       <widget class="Tile" name="tile83">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -913,10 +1243,16 @@
      <item row="7" column="7">
       <widget class="Tile" name="tile66">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -929,10 +1265,16 @@
      <item row="2" column="4">
       <widget class="Tile" name="tile13">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -945,10 +1287,16 @@
      <item row="2" column="3">
       <widget class="Tile" name="tile12">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -961,10 +1309,16 @@
      <item row="5" column="4">
       <widget class="Tile" name="tile43">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -977,10 +1331,16 @@
      <item row="3" column="6">
       <widget class="Tile" name="tile25">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -993,10 +1353,16 @@
      <item row="9" column="7">
       <widget class="Tile" name="tile86">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1009,10 +1375,16 @@
      <item row="5" column="3">
       <widget class="Tile" name="tile42">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1025,10 +1397,16 @@
      <item row="3" column="4">
       <widget class="Tile" name="tile23">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1041,10 +1419,16 @@
      <item row="3" column="7">
       <widget class="Tile" name="tile26">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1057,10 +1441,16 @@
      <item row="9" column="6">
       <widget class="Tile" name="tile85">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1073,10 +1463,16 @@
      <item row="8" column="3">
       <widget class="Tile" name="tile72">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1089,10 +1485,16 @@
      <item row="6" column="3">
       <widget class="Tile" name="tile52">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1105,10 +1507,16 @@
      <item row="7" column="3">
       <widget class="Tile" name="tile62">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1121,10 +1529,16 @@
      <item row="2" column="1">
       <widget class="Tile" name="tile11">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1137,10 +1551,16 @@
      <item row="8" column="0">
       <widget class="Tile" name="tile70">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1153,10 +1573,16 @@
      <item row="6" column="0">
       <widget class="Tile" name="tile50">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1169,10 +1595,16 @@
      <item row="2" column="5">
       <widget class="Tile" name="tile14">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1185,10 +1617,16 @@
      <item row="5" column="6">
       <widget class="Tile" name="tile45">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1201,10 +1639,16 @@
      <item row="0" column="8">
       <widget class="Tile" name="tile07">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1217,10 +1661,16 @@
      <item row="2" column="8">
       <widget class="Tile" name="tile17">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1233,10 +1683,16 @@
      <item row="3" column="8">
       <widget class="Tile" name="tile27">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1249,10 +1705,16 @@
      <item row="4" column="8">
       <widget class="Tile" name="tile37">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1265,10 +1727,16 @@
      <item row="5" column="8">
       <widget class="Tile" name="tile47">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1281,10 +1749,16 @@
      <item row="6" column="8">
       <widget class="Tile" name="tile57">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1297,10 +1771,16 @@
      <item row="8" column="8">
       <widget class="Tile" name="tile77">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1313,10 +1793,16 @@
      <item row="9" column="8">
       <widget class="Tile" name="tile87">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1329,10 +1815,16 @@
      <item row="10" column="8">
       <widget class="Tile" name="tile97">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1345,10 +1837,16 @@
      <item row="10" column="9">
       <widget class="Tile" name="tile98">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1361,10 +1859,16 @@
      <item row="10" column="10">
       <widget class="Tile" name="tile99">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1377,10 +1881,16 @@
      <item row="9" column="10">
       <widget class="Tile" name="tile89">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1393,10 +1903,16 @@
      <item row="8" column="10">
       <widget class="Tile" name="tile79">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1409,10 +1925,16 @@
      <item row="9" column="9">
       <widget class="Tile" name="tile88">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1425,10 +1947,16 @@
      <item row="8" column="9">
       <widget class="Tile" name="tile78">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1441,10 +1969,16 @@
      <item row="6" column="9">
       <widget class="Tile" name="tile58">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1457,10 +1991,16 @@
      <item row="6" column="10">
       <widget class="Tile" name="tile59">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1473,10 +2013,16 @@
      <item row="5" column="9">
       <widget class="Tile" name="tile48">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1489,10 +2035,16 @@
      <item row="5" column="10">
       <widget class="Tile" name="tile49">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1505,10 +2057,16 @@
      <item row="4" column="9">
       <widget class="Tile" name="tile38">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1521,10 +2079,16 @@
      <item row="4" column="10">
       <widget class="Tile" name="tile39">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1537,10 +2101,16 @@
      <item row="3" column="9">
       <widget class="Tile" name="tile28">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1553,10 +2123,16 @@
      <item row="3" column="10">
       <widget class="Tile" name="tile29">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1569,10 +2145,16 @@
      <item row="2" column="10">
       <widget class="Tile" name="tile19">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1585,10 +2167,16 @@
      <item row="2" column="9">
       <widget class="Tile" name="tile18">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1601,10 +2189,16 @@
      <item row="0" column="9">
       <widget class="Tile" name="tile08">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1617,10 +2211,16 @@
      <item row="0" column="10">
       <widget class="Tile" name="tile09">
        <property name="sizePolicy">
-        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
        </property>
        <property name="autoFillBackground">
         <bool>false</bool>
@@ -1638,8 +2238,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>888</width>
-     <height>21</height>
+     <width>886</width>
+     <height>29</height>
     </rect>
    </property>
   </widget>
