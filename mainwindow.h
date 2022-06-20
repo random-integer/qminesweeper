@@ -23,6 +23,7 @@ private:
     void lose();
     void win();
     int getCount(int row, int col);
+    void checkIfWon();
     Tile *tiles[10][10];
     int markedMineCount;
     int markedSafeTileCount;

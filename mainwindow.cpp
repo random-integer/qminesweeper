@@ -173,6 +173,7 @@ void MainWindow::dig(int row, int col) {
             }
         }
     }
+    checkIfWon();
 }
 
 
@@ -196,6 +197,7 @@ void MainWindow::reveal(int row, int col) {
         tiles[row][col]->setEnabled(false);
         tiles[row][col]->setText(QString("%1").arg(getCount(row, col)));
     }
+    checkIfWon();
 }
 
 void MainWindow::mark(int row, int col) {
@@ -216,6 +218,7 @@ void MainWindow::mark(int row, int col) {
         tiles[row][col]->marked = 0;
         tiles[row][col]->setText("");
     }
+    checkIfWon();
 }
 
 void MainWindow::fastDig(int row, int col) {
@@ -247,5 +250,14 @@ int MainWindow::getCount(int row, int col) {
 
 void MainWindow::lose() {
     emit explode();
+}
+
+void MainWindow::win() {
     return;
+}
+
+void MainWindow::checkIfWon() {
+    if (dugCount == 100 - MINECOUNT || (markedMineCount == MINECOUNT && markedSafeTileCount == 0)) {
+        win();
+    }
 }
