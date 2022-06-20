@@ -170,6 +170,7 @@ void MainWindow::dig(int row, int col) {
                 reveal(row+1, col+1);
             } else {
                 tiles[row][col]->setText(QString("%1").arg(count));
+                tiles[row][col]->setStyleSheet(getColorOf(count));
             }
         }
     }
@@ -196,6 +197,7 @@ void MainWindow::reveal(int row, int col) {
         dugCount++;
         tiles[row][col]->setEnabled(false);
         tiles[row][col]->setText(QString("%1").arg(getCount(row, col)));
+        tiles[row][col]->setStyleSheet(getColorOf(getCount(row, col)));
     }
     checkIfWon();
 }
@@ -259,5 +261,36 @@ void MainWindow::win() {
 void MainWindow::checkIfWon() {
     if (dugCount == 100 - MINECOUNT || (markedMineCount == MINECOUNT && markedSafeTileCount == 0)) {
         win();
+    }
+}
+
+QString MainWindow::getColorOf(int count) {
+    switch (count) {
+    case 1:
+        return "color: rgb(0, 0, 253)";
+        break;
+    case 2:
+        return "color: rgb(1, 126, 0)";
+        break;
+    case 3:
+        return "color: rgb(254, 0, 0)";
+        break;
+    case 4:
+        return "color: rgb(1, 1, 128)";
+        break;
+    case 5:
+        return "color: rgb(131, 0, 3)";
+        break;
+    case 6:
+        return "color: rgb(0, 128, 128)";
+        break;
+    case 7:
+        return "color: rgb(0, 0, 0)";
+        break;
+    case 8:
+        return "color: rgb(128, 128, 128)";
+        break;
+    default:
+        return "color: rgb(200, 20, 200)";
     }
 }

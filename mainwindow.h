@@ -24,6 +24,7 @@ private:
     void win();
     int getCount(int row, int col);
     void checkIfWon();
+    QString getColorOf(int count);
     Tile *tiles[10][10];
     int markedMineCount;
     int markedSafeTileCount;
