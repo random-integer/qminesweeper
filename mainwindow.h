@@ -3,6 +3,7 @@
 
 #include "tile.h"
 #include <QMainWindow>
+#include <vector>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -29,6 +30,7 @@ private:
     int markedMineCount;
     int markedSafeTileCount;
     int dugCount;
+    std::vector<int> notMines;
 private slots:
     void dig(int row, int col);
     void reveal(int row, int col);  // called when a neighboring tile of count 0 is dug()
