@@ -26,6 +26,9 @@ private:
     int getCount(int row, int col);
     void checkIfWon();
     QString getColorOf(int count);
+    void generateMines(int row, int col);
+    bool isMine(int row, int col);    // with bounds checking
+    void removeFromNotMines(int row, int col);
     Tile *tiles[10][10];
     int markedMineCount;
     int markedSafeTileCount;

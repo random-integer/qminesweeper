@@ -8,7 +8,7 @@
 #include <iostream>
 
 #define MINECOUNT 16
-#define DEBUG
+// #define DEBUG
 // #define CHEAT
 
 MainWindow::MainWindow(QWidget *parent)
@@ -141,20 +141,8 @@ MainWindow::MainWindow(QWidget *parent)
             tiles[i][j]->col = j;
         }
     }
-    // TODO: update the mine generation algorithm so that the user doesn't step on a mine on their first move
-    // stores the numbers from 0 to 99
+    // the numbers from 0 to 99
     notMines = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99};
-    int a, b;
-    srand(time(NULL));
-    for (int i = 0; i < MINECOUNT; i++) {
-        b = rand() % (100 - i);
-        a = notMines.at(b);
-        notMines.erase(notMines.begin() + b);
-        tiles[a/10][a%10]->mine = true;
-#ifdef CHEAT
-        tiles[a/10][a%10]->setStyleSheet("background-color: rgb(180, 180, 180)");
-#endif // CHEAT
-    }
 }
 
 MainWindow::~MainWindow() {
@@ -162,6 +150,7 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::dig(int row, int col) {
+    if (dugCount == 0) generateMines(row, col);
     if (tiles[row][col]->marked == 0) {
         if (tiles[row][col]->mine) {
             lose();
@@ -261,33 +250,15 @@ void MainWindow::mark(int row, int col) {
     checkIfWon();
 }
 
-/*
+/*    to be implemented
 void MainWindow::fastDig(int row, int col) {
     return;
 }
 */
 
 int MainWindow::getCount(int row, int col) {
-    if (row == 0 && col == 0) {
-        return tiles[0][1]->mine + tiles[1][1]->mine + tiles[1][0]->mine;
-    } else if (row == 0 && col == 9) {
-        return tiles[0][8]->mine + tiles[1][8]->mine + tiles[1][9]->mine;
-    } else if (row == 9 && col == 0) {
-        return tiles[8][0]->mine + tiles[8][1]->mine + tiles[9][1]->mine;
-    } else if (row == 9 && col == 9) {
-        return tiles[9][8]->mine + tiles[8][8]->mine + tiles[8][9]->mine;
-    } else if (row == 0) {
-        return tiles[0][col-1]->mine + tiles[1][col-1]->mine + tiles[1][col]->mine + tiles[1][col+1]->mine + tiles[0][col+1]->mine;
-    } else if (row == 9) {
-        return tiles[9][col-1]->mine + tiles[8][col-1]->mine + tiles[8][col]->mine + tiles[8][col+1]->mine + tiles[9][col+1]->mine;
-    } else if (col == 0) {
-        return tiles[row-1][0]->mine + tiles[row-1][1]->mine + tiles[row][1]->mine + tiles[row+1][1]->mine + tiles[row+1][0]->mine;
-    } else if (col == 9) {
-        return tiles[row-1][9]->mine + tiles[row-1][8]->mine + tiles[row][8]->mine + tiles[row+1][8]->mine + tiles[row+1][9]->mine;
-    } else {
-        return tiles[row][col+1]->mine + tiles[row-1][col+1]->mine + tiles[row-1][col]->mine + tiles[row-1][col-1]->mine
-                + tiles[row][col-1]->mine + tiles[row+1][col-1]->mine + tiles[row+1][col]->mine + tiles[row+1][col+1]->mine;
-    }
+    return isMine(row, col+1) + isMine(row-1, col+1) + isMine(row-1, col) + isMine(row-1, col-1) + isMine(row, col-1) + isMine(row+1, col-1)
+            + isMine(row+1, col) + isMine(row+1, col+1);
 }
 
 void MainWindow::lose() {
@@ -321,7 +292,7 @@ QString MainWindow::getColorOf(int count) {
         break;
     case 2:
         return "color: rgb(1, 126, 0)";
-        break;
+        break;;
     case 3:
         return "color: rgb(254, 0, 0)";
         break;
@@ -340,7 +311,52 @@ QString MainWindow::getColorOf(int count) {
     case 8:
         return "color: rgb(128, 128, 128)";
         break;
-    default:    // shouldn't happen but oh well i'll still leave it here
+    default:    // shouldn't happen but oh well i'll leave it here
         return "color: rgb(200, 20, 200)";
+    }
+}
+
+void MainWindow::removeFromNotMines(int row, int col) {
+    if (row < 0 || row > 9 || col < 0 || col > 9) {
+        return;
+    } else {
+        tiles[row][col]->mine = false;
+        for (int i = 0; i < (int) notMines.size(); i++) {
+            if (notMines.at(i) == row * 10 + col) {
+                notMines.erase(notMines.begin() + i);
+                break;
+            }
+        }
+    }
+}
+
+void MainWindow::generateMines(int row, int col) {
+    removeFromNotMines(row, col);
+    removeFromNotMines(row+1, col+1);
+    removeFromNotMines(row+1, col-1);
+    removeFromNotMines(row+1, col);
+    removeFromNotMines(row-1, col+1);
+    removeFromNotMines(row-1, col-1);
+    removeFromNotMines(row-1, col);
+    removeFromNotMines(row, col+1);
+    removeFromNotMines(row, col-1);
+
+    int a, b;
+    for (int i = 0; i < MINECOUNT; i++) {    // regen lost mines
+        b = rand() % (91 - i);
+        a = notMines.at(b);
+        notMines.erase(notMines.begin() + b);
+        tiles[a/10][a%10]->mine = true;
+#ifdef CHEAT
+        tiles[a/10][a%10]->setStyleSheet("background-color: rgb(80, 80, 80)");
+#endif // CHEAT
+    }
+}
+
+bool MainWindow::isMine(int row, int col) {
+    if (row < 0 || row > 9 || col < 0 || col > 9) {
+        return false;
+    } else {
+        return tiles[row][col]->mine;
     }
 }
