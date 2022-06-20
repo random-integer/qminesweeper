@@ -166,8 +166,9 @@ void MainWindow::dig(int row, int col) {
                 reveal(row+1, col-1);
                 reveal(row+1, col);
                 reveal(row+1, col+1);
+            } else {
+                tiles[row][col]->setText(QString("%1").arg(count));
             }
-            tiles[row][col]->setText(QString("%1").arg(count));
         }
         break;
     case 1:
@@ -177,7 +178,6 @@ void MainWindow::dig(int row, int col) {
 }
 
 
-// problematic, to be fixed
 void MainWindow::reveal(int row, int col) {
     if (row < 0 || row > 9 || col < 0 || col > 9 || tiles[row][col]->marked > 0 || tiles[row][col]->mine || !tiles[row][col]->isEnabled()) {
         return;
