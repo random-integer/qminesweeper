@@ -61,6 +61,16 @@ void Tile::detonate() {
             case 2:
                 this->setText("? bomb");
             }
+        } else { // not a mine
+            switch (this->marked) {
+            case 0:
+                break;
+            case 1:
+                this->setText("⚑X");
+                break;
+            case 2:
+                this->setText("?X");
+            }
         }
     }
 }

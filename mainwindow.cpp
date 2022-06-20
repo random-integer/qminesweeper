@@ -2,10 +2,13 @@
 #include "ui_mainwindow.h"
 #include "tile.h"
 #include <QTextStream>
+#include <QMessageBox>
 #include <vector>
 #include <random>
+#include <iostream>
 
 #define MINECOUNT 16
+#define DEBUG
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
@@ -131,12 +134,13 @@ MainWindow::MainWindow(QWidget *parent)
             // tiles[i][j]->setText(QString("%1").arg(10 * i + j));
             connect(tiles[i][j], &Tile::clicked, this, [=]() { this->dig(i, j); });
             connect(tiles[i][j], &Tile::rightClicked, this, [=]() { this->mark(i, j); });
-            connect(tiles[i][j], &Tile::middleClicked, this, [=]() { this->fastDig(i, j); });
+            // connect(tiles[i][j], &Tile::middleClicked, this, [=]() { this->fastDig(i, j); });
             connect(this, &MainWindow::explode, tiles[i][j], &Tile::detonate);
             tiles[i][j]->row = i;
             tiles[i][j]->col = j;
         }
     }
+    // TODO: update the mine generation algorithm so that the user doesn't step on a mine on their first move
     // stores the numbers from 0 to 99
     std::vector<int> v = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99};
     int a;
@@ -155,9 +159,13 @@ void MainWindow::dig(int row, int col) {
     if (tiles[row][col]->marked == 0) {
         if (tiles[row][col]->mine) {
             lose();
+            QApplication::quit();
         } else {
             tiles[row][col]->setEnabled(false);
             dugCount++;
+#ifdef DEBUG
+            std::cout << "dugCount: " << dugCount-1 << "->" << dugCount << '\n';
+#endif // DEBUG
             int count = getCount(row, col);
             if (count == 0) {
                 reveal(row, col+1);
@@ -172,9 +180,9 @@ void MainWindow::dig(int row, int col) {
                 tiles[row][col]->setText(QString("%1").arg(count));
                 tiles[row][col]->setStyleSheet(getColorOf(count));
             }
+            checkIfWon();
         }
     }
-    checkIfWon();
 }
 
 
@@ -184,6 +192,9 @@ void MainWindow::reveal(int row, int col) {
         return;
     } else if (getCount(row, col) == 0) {
         dugCount++;
+#ifdef DEBUG
+        std::cout << "dugCount: " << dugCount-1 << "->" << dugCount << '\n';
+#endif // DEBUG
         tiles[row][col]->setEnabled(false);
         reveal(row, col+1);
         reveal(row-1, col+1);
@@ -195,6 +206,9 @@ void MainWindow::reveal(int row, int col) {
         reveal(row+1, col+1);
     } else {
         dugCount++;
+#ifdef DEBUG
+            std::cout << "dugCount: " << dugCount-1 << "->" << dugCount << '\n';
+#endif // DEBUG
         tiles[row][col]->setEnabled(false);
         tiles[row][col]->setText(QString("%1").arg(getCount(row, col)));
         tiles[row][col]->setStyleSheet(getColorOf(getCount(row, col)));
@@ -207,14 +221,32 @@ void MainWindow::mark(int row, int col) {
     case 0:
         tiles[row][col]->marked = 1;
         tiles[row][col]->setText("⚑");
-        markedMineCount += tiles[row][col]->mine;
-        markedSafeTileCount += !tiles[row][col]->mine;
+        if (tiles[row][col]->mine) {
+            markedMineCount++;
+#ifdef DEBUG
+            std::cout << "markedMineCount: " << markedMineCount-1 << "->" << markedMineCount << '\n';
+#endif // DEBUG
+        } else {
+            markedSafeTileCount++;
+#ifdef DEBUG
+            std::cout << "markedSafeTileCount: " << markedSafeTileCount-1 << "->" << markedSafeTileCount << '\n';
+#endif // DEBUG
+        }
         break;
     case 1:
         tiles[row][col]->marked = 2;
         tiles[row][col]->setText("?");
-        markedMineCount -= tiles[row][col]->mine;
-        markedSafeTileCount -= !tiles[row][col]->mine;
+        if (tiles[row][col]->mine) {
+            markedMineCount--;
+#ifdef DEBUG
+            std::cout << "markedMineCount: " << markedMineCount+1 << "->" << markedMineCount << '\n';
+#endif // DEBUG
+        } else {
+            markedSafeTileCount--;
+#ifdef DEBUG
+            std::cout << "markedSafeTileCount: " << markedSafeTileCount+1 << "->" << markedSafeTileCount << '\n';
+#endif // DEBUG
+        }
         break;
     case 2:
         tiles[row][col]->marked = 0;
@@ -223,9 +255,11 @@ void MainWindow::mark(int row, int col) {
     checkIfWon();
 }
 
+/*
 void MainWindow::fastDig(int row, int col) {
     return;
 }
+*/
 
 int MainWindow::getCount(int row, int col) {
     if (row == 0 && col == 0) {
@@ -252,15 +286,25 @@ int MainWindow::getCount(int row, int col) {
 
 void MainWindow::lose() {
     emit explode();
+    QMessageBox msgBox;
+    msgBox.setText("You lost!");
+    msgBox.setInformativeText("Sucks to be you");
+    msgBox.setIcon(QMessageBox::Information);
+    msgBox.exec();
 }
 
 void MainWindow::win() {
-    return;
+    QMessageBox msgBox;
+    msgBox.setText("You win! Congrats!");
+    msgBox.setInformativeText("Nice job!");
+    msgBox.setIcon(QMessageBox::Information);
+    msgBox.exec();
 }
 
 void MainWindow::checkIfWon() {
     if (dugCount == 100 - MINECOUNT || (markedMineCount == MINECOUNT && markedSafeTileCount == 0)) {
         win();
+        QApplication::quit();
     }
 }
 
@@ -290,7 +334,7 @@ QString MainWindow::getColorOf(int count) {
     case 8:
         return "color: rgb(128, 128, 128)";
         break;
-    default:
+    default:    // shouldn't happen but oh well i'll still leave it here
         return "color: rgb(200, 20, 200)";
     }
 }
