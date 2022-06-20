@@ -13,6 +13,8 @@ public:
     int marked;  // 0: not marked, 1: flagged, 2: question marked
     int row;
     int col;
+public slots:
+    void detonate();
 
 signals:
     void rightClicked();
@@ -20,7 +22,6 @@ signals:
 
 private slots:
     void mousePressEvent(QMouseEvent *e);
-
 };
 
 #endif // TILE_H

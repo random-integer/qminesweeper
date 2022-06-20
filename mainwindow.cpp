@@ -5,13 +5,12 @@
 #include <vector>
 #include <random>
 
-#define MINECOUNT 15
+#define MINECOUNT 16
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow) {
     ui->setupUi(this);
-    srand(time(NULL));
     // tiles[row][column]
     /*  // doesn't seem to work quite reliably
     for (int i = 0; i < 10; i++) {
@@ -130,6 +129,7 @@ MainWindow::MainWindow(QWidget *parent)
             connect(tiles[i][j], &Tile::clicked, this, [=]() { this->dig(i, j); });
             connect(tiles[i][j], &Tile::rightClicked, this, [=]() { this->mark(i, j); });
             connect(tiles[i][j], &Tile::middleClicked, this, [=]() { this->fastDig(i, j); });
+            connect(this, &MainWindow::explode, tiles[i][j], &Tile::detonate);
             tiles[i][j]->row = i;
             tiles[i][j]->col = j;
         }
@@ -137,6 +137,7 @@ MainWindow::MainWindow(QWidget *parent)
     // stores the numbers from 0 to 99
     std::vector<int> v = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99};
     int a;
+    srand(time(NULL));
     for (int i = 0; i < MINECOUNT; i++) {
         a = v.at(rand() % (100 - i));
         tiles[a/10][a%10]->mine = true;
@@ -152,9 +153,20 @@ void MainWindow::dig(int row, int col) {
     case 0:
         if (tiles[row][col]->mine) {
             emit explode();
+            lose();
         } else {
             tiles[row][col]->setEnabled(false);
             int count = getCount(row, col);
+            if (count == 0) {
+                reveal(row, col+1);
+                reveal(row-1, col+1);
+                reveal(row-1, col);
+                reveal(row-1, col-1);      // don't worry about the row±1 or col±1 going out of range,
+                reveal(row, col-1);        // reveal() would handle that
+                reveal(row+1, col-1);
+                reveal(row+1, col);
+                reveal(row+1, col+1);
+            }
             tiles[row][col]->setText(QString("%1").arg(count));
         }
         break;
@@ -164,8 +176,27 @@ void MainWindow::dig(int row, int col) {
     }
 }
 
+
+// problematic, to be fixed
 void MainWindow::reveal(int row, int col) {
-    return;
+    if (row < 0 || row > 9 || col < 0 || col > 9 || tiles[row][col]->marked > 0 || tiles[row][col]->mine || !tiles[row][col]->isEnabled()) {
+        return;
+    } else if (getCount(row, col) == 0) {
+        tiles[row][col]->setEnabled(false);
+        reveal(row, col+1);
+        reveal(row-1, col+1);
+        reveal(row-1, col);
+        reveal(row-1, col-1);
+        reveal(row, col-1);
+        reveal(row+1, col-1);
+        reveal(row+1, col);
+        reveal(row+1, col+1);
+        return;
+    } else {
+        tiles[row][col]->setEnabled(false);
+        tiles[row][col]->setText(QString("%1").arg(getCount(row, col)));
+        return;
+    }
 }
 
 void MainWindow::mark(int row, int col) {
@@ -210,4 +241,8 @@ int MainWindow::getCount(int row, int col) {
         return tiles[row][col+1]->mine + tiles[row-1][col+1]->mine + tiles[row-1][col]->mine + tiles[row-1][col-1]->mine
                 + tiles[row][col-1]->mine + tiles[row+1][col-1]->mine + tiles[row+1][col]->mine + tiles[row+1][col+1]->mine;
     }
+}
+
+void MainWindow::lose() {
+    return;
 }

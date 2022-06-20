@@ -49,3 +49,19 @@ void Tile::secondaryDig() {
     return;
 }
 */
+
+void Tile::detonate() {
+    if (this->isEnabled()) {
+        if (this->mine) {
+            switch (this->marked) {
+            case 0:
+                this->setText("bomb");
+                break;
+            case 1:
+                break;
+            case 2:
+                this->setText("? bomb");
+            }
+        }
+    }
+}
