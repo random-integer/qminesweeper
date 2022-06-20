@@ -8,8 +8,10 @@
 #define MINECOUNT 16
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow) {
+    : QMainWindow(parent),
+    ui(new Ui::MainWindow),
+    markedMineCount(0),
+    markedSafeTileCount(0) {
     ui->setupUi(this);
     // tiles[row][column]
     /*  // doesn't seem to work quite reliably
@@ -149,8 +151,7 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::dig(int row, int col) {
-    switch (tiles[row][col]->marked) {
-    case 0:
+    if (tiles[row][col]->marked == 0) {
         if (tiles[row][col]->mine) {
             emit explode();
             lose();
@@ -170,10 +171,6 @@ void MainWindow::dig(int row, int col) {
                 tiles[row][col]->setText(QString("%1").arg(count));
             }
         }
-        break;
-    case 1:
-    case 2:
-        return;
     }
 }
 
@@ -191,11 +188,9 @@ void MainWindow::reveal(int row, int col) {
         reveal(row+1, col-1);
         reveal(row+1, col);
         reveal(row+1, col+1);
-        return;
     } else {
         tiles[row][col]->setEnabled(false);
         tiles[row][col]->setText(QString("%1").arg(getCount(row, col)));
-        return;
     }
 }
 
@@ -213,7 +208,6 @@ void MainWindow::mark(int row, int col) {
         tiles[row][col]->marked = 0;
         tiles[row][col]->setText("");
     }
-    return;
 }
 
 void MainWindow::fastDig(int row, int col) {

@@ -24,6 +24,8 @@ private:
     void win();
     int getCount(int row, int col);
     Tile *tiles[10][10];
+    int markedMineCount;
+    int markedSafeTileCount;
 private slots:
     void dig(int row, int col);
     void reveal(int row, int col);  // called when a neighboring tile of count 0 is dug()

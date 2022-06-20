@@ -3,9 +3,9 @@
 #include <QTextStream>
 
 Tile::Tile(QWidget *parent)
-    : QPushButton{parent}
-    , mine(false)
-    , marked(0) {
+    : QPushButton{parent},
+    mine(false),
+    marked(0) {
     return;
 }
 
@@ -17,7 +17,6 @@ void Tile::mousePressEvent(QMouseEvent *e) {
     } else {
         emit middleClicked();
     }
-    return;
 }
 
 /*
