@@ -5,6 +5,8 @@
 #include <QMainWindow>
 #include <vector>
 
+// #define FASTDIG
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -28,6 +30,7 @@ private:
     QString getColorOf(int count);
     void generateMines(int row, int col);
     bool isMine(int row, int col);    // with bounds checking
+    bool isFlagged(int row, int col); // with bounds checking. also, a ? counts as a zero
     void removeFromNotMines(int row, int col);
     Tile *tiles[10][10];
     int markedMineCount;
@@ -38,6 +41,8 @@ private slots:
     void dig(int row, int col);
     void reveal(int row, int col);  // called when a neighboring tile of count 0 is dug()
     void mark(int row, int col);
-    // void fastDig(int row, int col);  // called when a tile is middle clicked
+#ifdef FASTDIG
+    void fastDig(int row, int col);  // called when a tile is middle clicked
+#endif // FASTDIG
 };
 #endif // MAINWINDOW_H

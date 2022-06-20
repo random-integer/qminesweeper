@@ -10,6 +10,7 @@
 #define MINECOUNT 16
 // #define DEBUG
 // #define CHEAT
+// FASTDIG switch is in mainwindow.h
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
@@ -135,7 +136,9 @@ MainWindow::MainWindow(QWidget *parent)
             // tiles[i][j]->setText(QString("%1").arg(10 * i + j));
             connect(tiles[i][j], &Tile::clicked, this, [=]() { this->dig(i, j); });
             connect(tiles[i][j], &Tile::rightClicked, this, [=]() { this->mark(i, j); });
-            // connect(tiles[i][j], &Tile::middleClicked, this, [=]() { this->fastDig(i, j); });
+#ifdef FASTDIG
+            connect(tiles[i][j], &Tile::middleClicked, this, [=]() { this->fastDig(i, j); });
+#endif // FASTDIG
             connect(this, &MainWindow::explode, tiles[i][j], &Tile::detonate);
             tiles[i][j]->row = i;
             tiles[i][j]->col = j;
@@ -212,6 +215,14 @@ void MainWindow::reveal(int row, int col) {
 }
 
 void MainWindow::mark(int row, int col) {
+    if (dugCount == 0) {
+        QMessageBox msgBox;
+        msgBox.setText("You can't put down a flag on your first move");
+        msgBox.setInformativeText("Silly you");
+        msgBox.setIcon(QMessageBox::Information);
+        msgBox.exec();
+        return;
+    }
     switch (tiles[row][col]->marked) {
     case 0:
         tiles[row][col]->marked = 1;
@@ -250,11 +261,29 @@ void MainWindow::mark(int row, int col) {
     checkIfWon();
 }
 
-/*    to be implemented
+#ifdef FASTDIG
 void MainWindow::fastDig(int row, int col) {
-    return;
+    int flagged = isFlagged(row, col+1) + isFlagged(row-1, col+1) + isFlagged(row-1, col) + isFlagged(row-1, col-1) + isFlagged(row, col-1)
+            + isFlagged(row+1, col-1) + isFlagged(row+1, col) + isFlagged(row+1, col+1);
+    if (dugCount == 0) {
+        QMessageBox msgBox;
+        msgBox.setText("You can't middle click on your first move");
+        msgBox.setInformativeText("Silly you");
+        msgBox.setIcon(QMessageBox::Information);
+        msgBox.exec();
+    } else if (getCount(row, col) == flagged && !tiles[row][col]->mine && !tiles[row][col]->isEnabled()) {
+        dig(row, col+1);
+        dig(row-1, col+1);
+        dig(row-1, col);
+        dig(row-1, col-1);
+        dig(row, col-1);
+        dig(row+1, col-1);
+        dig(row+1, col);
+        dig(row+1, col+1);
+    }
+
 }
-*/
+#endif // FASTDIG
 
 int MainWindow::getCount(int row, int col) {
     return isMine(row, col+1) + isMine(row-1, col+1) + isMine(row-1, col) + isMine(row-1, col-1) + isMine(row, col-1) + isMine(row+1, col-1)
@@ -358,5 +387,13 @@ bool MainWindow::isMine(int row, int col) {
         return false;
     } else {
         return tiles[row][col]->mine;
+    }
+}
+
+bool MainWindow::isFlagged(int row, int col) {
+    if (row < 0 || row > 9 || col < 0 || col > 9) {
+        return false;
+    } else {
+        return tiles[row][col]->marked;   // implicit conversion! both 1 and 2 become true, while 0 becomes false
     }
 }
