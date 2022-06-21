@@ -167,13 +167,9 @@ void MainWindow::dig(int row, int col) {
             int count = getCount(row, col);
             if (count == 0) {
                 reveal(row, col+1);
-                reveal(row-1, col+1);
-                reveal(row-1, col);
-                reveal(row-1, col-1);      // don't worry about the row±1 or col±1 going out of range,
+                reveal(row-1, col);      // don't worry about the row±1 or col±1 going out of range,
                 reveal(row, col-1);        // reveal() would handle that
-                reveal(row+1, col-1);
                 reveal(row+1, col);
-                reveal(row+1, col+1);
             } else {
                 tiles[row][col]->setText(QString("%1").arg(count));
                 tiles[row][col]->setStyleSheet(getColorOf(count));
@@ -195,13 +191,9 @@ void MainWindow::reveal(int row, int col) {
 #endif // DEBUG
         tiles[row][col]->setEnabled(false);
         reveal(row, col+1);
-        reveal(row-1, col+1);
         reveal(row-1, col);
-        reveal(row-1, col-1);
         reveal(row, col-1);
-        reveal(row+1, col-1);
         reveal(row+1, col);
-        reveal(row+1, col+1);
     } else {
         dugCount++;
 #ifdef DEBUG
