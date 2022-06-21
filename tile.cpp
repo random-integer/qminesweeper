@@ -19,36 +19,6 @@ void Tile::mousePressEvent(QMouseEvent *e) {
     }
 }
 
-/*
-void Tile::dig() {
-    this->setText("dug");
-    switch (marked) {
-    case 0: // not marked
-        if (mine) {
-            emit explode();
-        } else {
-            // TODO: make button disappear
-        }
-        break;
-    case 1: // flagged
-    case 2: // question marked
-        return;
-        break;
-    }
-
-}
-
-void Tile::mark() {
-    this->marked += 1;
-    this->marked %= 3;
-    return;
-}
-
-void Tile::secondaryDig() {
-    return;
-}
-*/
-
 void Tile::detonate() {
     if (this->isEnabled()) {
         if (this->mine) {
