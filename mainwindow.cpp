@@ -300,7 +300,7 @@ void MainWindow::win() {
 }
 
 void MainWindow::checkIfWon() {
-    if (dugCount == 100 - MINECOUNT || (markedMineCount == MINECOUNT && markedSafeTileCount == 0)) {
+    if (dugCount == 100 - MINECOUNT) {
         win();
         QApplication::quit();
     }
