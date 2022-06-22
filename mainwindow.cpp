@@ -273,7 +273,6 @@ void MainWindow::fastDig(int row, int col) {
         dig(row+1, col);
         dig(row+1, col+1);
     }
-
 }
 #endif // FASTDIG
 
