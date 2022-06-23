@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "startupdialog.h"
 
 #include <QApplication>
 
