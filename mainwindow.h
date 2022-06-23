@@ -33,7 +33,7 @@ private:
     void generateMines(int row, int col);             // called when the user makes their first move
     bool isMine(int row, int col);                    // with bounds checking
     bool isFlagged(int row, int col);                 // with bounds checking. also, a ? counts as a zero
-    void removeFromCanPutMines(int row, int col);        // called by generateMines() to remove the neighboring cells of the tile dug on the first move and
+    void removeFromCanPutMines(int row, int col);     // called by generateMines() to remove the neighboring cells of the tile dug on the first move and
                                                       // itself from canPutMines, the list of possible mine locations
     Tile *tiles[10][10];                              // a list containing the all the tiles
     int markedMineCount;                              // how many mines are flagged by the user (? doesn't count)
