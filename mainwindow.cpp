@@ -145,7 +145,7 @@ MainWindow::MainWindow(QWidget *parent)
         }
     }
     // the numbers from 0 to 99
-    notMines = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99};
+    canPutMines = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99};
 }
 
 MainWindow::~MainWindow() {
@@ -153,7 +153,7 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::dig(int row, int col) {
-    if (dugCount == 0) generateMines(row, col);
+    if (dugCount == 0) generateMines(row, col);    // if the user has not dug anything yet, generate the mines first
     if (tiles[row][col]->marked == 0) {
         if (tiles[row][col]->mine) {
             lose();
@@ -166,9 +166,10 @@ void MainWindow::dig(int row, int col) {
 #endif // DEBUG
             int count = getCount(row, col);
             if (count == 0) {
+                // if the tile dug has no mines surrounding it, then reveal the surrounding 4 mines
                 reveal(row, col+1);
                 reveal(row-1, col);      // don't worry about the row±1 or col±1 going out of range,
-                reveal(row, col-1);        // reveal() would handle that
+                reveal(row, col-1);      // reveal() would handle that
                 reveal(row+1, col);
             } else {
                 tiles[row][col]->setText(QString("%1").arg(count));
@@ -181,6 +182,7 @@ void MainWindow::dig(int row, int col) {
 
 
 void MainWindow::reveal(int row, int col) {
+    //
     // | out     of          range                |    marked                    |   is mine              |       ! is dug               |
     if (row < 0 || row > 9 || col < 0 || col > 9 || tiles[row][col]->marked > 0 || tiles[row][col]->mine || !tiles[row][col]->isEnabled()) {
         return;
@@ -336,14 +338,14 @@ QString MainWindow::getColorOf(int count) {
     }
 }
 
-void MainWindow::removeFromNotMines(int row, int col) {
+void MainWindow::removeFromCanPutMines(int row, int col) {
     if (row < 0 || row > 9 || col < 0 || col > 9) {
         return;
     } else {
         tiles[row][col]->mine = false;
-        for (int i = 0; i < (int) notMines.size(); i++) {
-            if (notMines.at(i) == row * 10 + col) {
-                notMines.erase(notMines.begin() + i);
+        for (int i = 0; i < (int) canPutMines.size(); i++) {
+            if (canPutMines.at(i) == row * 10 + col) {
+                canPutMines.erase(canPutMines.begin() + i);
                 break;
             }
         }
@@ -351,21 +353,21 @@ void MainWindow::removeFromNotMines(int row, int col) {
 }
 
 void MainWindow::generateMines(int row, int col) {
-    removeFromNotMines(row, col);
-    removeFromNotMines(row+1, col+1);
-    removeFromNotMines(row+1, col-1);
-    removeFromNotMines(row+1, col);
-    removeFromNotMines(row-1, col+1);
-    removeFromNotMines(row-1, col-1);
-    removeFromNotMines(row-1, col);
-    removeFromNotMines(row, col+1);
-    removeFromNotMines(row, col-1);
+    removeFromCanPutMines(row, col);
+    removeFromCanPutMines(row+1, col+1);
+    removeFromCanPutMines(row+1, col-1);
+    removeFromCanPutMines(row+1, col);
+    removeFromCanPutMines(row-1, col+1);
+    removeFromCanPutMines(row-1, col-1);
+    removeFromCanPutMines(row-1, col);
+    removeFromCanPutMines(row, col+1);
+    removeFromCanPutMines(row, col-1);
 
     int a, b;
     for (int i = 0; i < MINECOUNT; i++) {    // regen lost mines
         b = rand() % (91 - i);
-        a = notMines.at(b);
-        notMines.erase(notMines.begin() + b);
+        a = canPutMines.at(b);
+        canPutMines.erase(canPutMines.begin() + b);
         tiles[a/10][a%10]->mine = true;
 #ifdef CHEAT
         tiles[a/10][a%10]->setStyleSheet("background-color: rgb(80, 80, 80)");
