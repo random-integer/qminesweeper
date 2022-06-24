@@ -20,16 +20,8 @@ MainWindow::MainWindow(QWidget *parent)
     dugCount(0) {
     ui->setupUi(this);
     // tiles[row][column]
-    /*  // doesn't seem to work quite reliably
-    for (int i = 0; i < 10; i++) {
-        for (int j = 0; j < 10; j++) {
-            tiles[i][j] = static_cast<QPushButton*>(ui->gridLayout->itemAtPosition(i, j)->widget());
-            // tiles[i][j] = tileij
-        }
-    }
-    */
 
-    if (true) {    // so far, this seems to be the most robust way I've found
+    if (true) {    // qwq
         tiles[0][0] = ui->tile00;
         tiles[0][1] = ui->tile01;
         tiles[0][2] = ui->tile02;
