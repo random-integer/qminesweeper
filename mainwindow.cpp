@@ -132,8 +132,6 @@ MainWindow::MainWindow(QWidget *parent)
             connect(tiles[i][j], &Tile::middleClicked, this, [=]() { this->fastDig(i, j); });
 #endif // FASTDIG
             connect(this, &MainWindow::explode, tiles[i][j], &Tile::detonate);
-            tiles[i][j]->row = i;
-            tiles[i][j]->col = j;
         }
     }
     // the numbers from 0 to 99

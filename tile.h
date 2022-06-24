@@ -11,8 +11,6 @@ public:
     explicit Tile(QWidget *parent = nullptr);
     bool mine;
     int marked;  // 0: not marked, 1: flagged, 2: question marked
-    int row;
-    int col;
 public slots:
     void detonate();
 
