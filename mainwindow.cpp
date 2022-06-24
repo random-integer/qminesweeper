@@ -352,7 +352,7 @@ void MainWindow::generateMines(int row, int col) {
     removeFromNotMines(row, col-1);
 
     int a, b;
-    for (int i = 0; i < MINECOUNT; i++) {    // regen lost mines
+    for (int i = 0; i < MINECOUNT; i++) {
         b = rand() % (91 - i);
         a = notMines.at(b);
         notMines.erase(notMines.begin() + b);
