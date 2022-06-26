@@ -3,7 +3,7 @@
 #include <QTextStream>
 
 Tile::Tile(QWidget *parent)
-    : QPushButton{parent},
+    : QPushButton(parent),
     mine(false),
     marked(0) {
     return;
