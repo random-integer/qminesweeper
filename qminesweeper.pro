@@ -11,12 +11,10 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    startupdialog.cpp \
     tile.cpp
 
 HEADERS += \
     mainwindow.h \
-    startupdialog.h \
     tile.h
 
 # Default rules for deployment.
@@ -25,5 +23,4 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 FORMS += \
-    mainwindow.ui \
-    startupdialog.ui
+    mainwindow.ui
