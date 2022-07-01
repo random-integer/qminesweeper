@@ -304,7 +304,7 @@ QString MainWindow::getColorOf(int count) {
         break;
     case 2:
         return "color: rgb(1, 126, 0)";
-        break;;
+        break;
     case 3:
         return "color: rgb(254, 0, 0)";
         break;
